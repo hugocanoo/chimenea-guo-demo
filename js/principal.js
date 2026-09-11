@@ -14,7 +14,7 @@
   }
 
   // Revelado suave al bajar (sin JS, todo se ve desde el principio)
-  var bloques = document.querySelectorAll('.revelar');
+  var bloques = document.querySelectorAll('.revelar, .revelar-foto');
   if ('IntersectionObserver' in window) {
     var observador = new IntersectionObserver(function (entradas) {
       entradas.forEach(function (e) {
